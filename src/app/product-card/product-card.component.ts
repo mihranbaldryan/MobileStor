@@ -36,6 +36,7 @@ export class ProductCardComponent implements OnInit {
   ]
   os = [
     'Android 8.0',
+    
   ]
   screenType = [
     'Super AMOLED',
@@ -155,94 +156,49 @@ export class ProductCardComponent implements OnInit {
 
 
 
+  mobile;tablet;accessories = [{
+        img: this.img,
+        compony: this.company,
+        model: this.model,
+        price: this.price,
+        version: this.version,
+        year: this.year,
+        os: this.os,
+        screenType: this.screenType,
+        screenResolution: this.screenResolution,
+        screenSize: this.screenSize,
+        frontCamera: this.frontCamera,
+        mainCamera: this.mainCamera,
+        numberOfProcessorCores: this.numberOfProcessorCores,
+        cpu: this.cpu,
+        ram: this.ram,
+        memoryCardSlot: this.memoryCardSlot,
+        memory: this.memory,
+        standartNetwork: this.standartNetwork,
+        accessToTheInternet: this.accessToTheInternet,
+        networkRangeLte4G: this.networkRangeLte4G,
+        gps: this.gps,
+        bluetooth: this.bluetooth,
+        wifiNetwork: this.wifiNetwork,
+        network3G: this.network3G,
+        nfc: this.nfc,
+        networkLte4G: this.networkLte4G,
+        chorgingConnectorType: this.chorgingConnectorType,
+        talkTime: this.talkTime,
+        batteryType: this.batteryType,
+        batteryCapacity: this.batteryCapacity,
+        weight: this.weight,
+        thickness: this.thickness,
+        height: this.height,
+        width: this.width,
+        audio: this.audio,
+        simCardQuantity: this.simCardQuantity,
+  }]
+  
 
-  info = [
-    {
-      img: this.img,
-      compony: this.company,
-      model: this.model,
-      price: this.price,
-    }
-  ];
-  general = [
-    {
-      version: this.version,
-      year: this.year,
-      os: this.os,
-    }
-  ];
-  display = [
-    {
-      screenType: this.screenType,
-      screenResolution: this.screenResolution,
-      screenSize: this.screenSize,
-    }
-  ];
-  camera = [
-    {
-      frontCamera: this.frontCamera,
-      mainCamera: this.mainCamera,
-    }
-  ];
-  memoryCpu = [
-    {
-      numberOfProcessorCores: this.numberOfProcessorCores,
-      cpu: this.cpu,
-      ram: this.ram,
-      memoryCardSlot: this.memoryCardSlot,
-      memory: this.memory,
-    }
-  ];
-  network = [
-    {
-      standartNetwork: this.standartNetwork,
-      accessToTheInternet: this.accessToTheInternet,
-      networkRangeLte4G: this.networkRangeLte4G,
-      gps: this.gps,
-      bluetooth: this.bluetooth,
-      wifiNetwork: this.wifiNetwork,
-      network3G: this.network3G,
-      nfc: this.nfc,
-      networkLte4G: this.networkLte4G,
-    }
-  ];
-  power = [
-    {
-      chorgingConnectorType: this.chorgingConnectorType,
-      talkTime: this.talkTime,
-      batteryType: this.batteryType,
-      batteryCapacity: this.batteryCapacity,
-    }
-  ];
-  other = [
-    {
-      weight: this.weight,
-      thickness: this.thickness,
-      height: this.height,
-      width: this.width,
-      audio: this.audio,
-      simCardQuantity: this.simCardQuantity,
-    }
-  ];
-
-  mobiles;tablets = [
-    this.info,
-    this.general,    
-    this.display,
-    this.camera,
-    this.memoryCpu,
-    this.network,
-    this.power,
-    this.other
-  ];
-
-  accessories = [ 
-    this.info,
-  ]
-
-  products = [
-    this.mobiles,
-    this.tablets,
+  product = [
+    this.mobile,
+    this.tablet,
     this.accessories
   ];
 
