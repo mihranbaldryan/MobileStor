@@ -1,0 +1,38 @@
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    width:  80%;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+
+.sectionUrls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    height: auto;
+    margin: 0px auto;
+    color: #000;
+    text-decoration: none;
+}
+
+.sectionUrls:hover {
+    box-shadow: 0 0 10px rgba(203, 107, 0, 1);
+}
+
+.sectionsMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.sectionsName {
+    font-size: 1vw;
+}
