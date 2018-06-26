@@ -12,6 +12,7 @@
     justify-content: space-around;
     position: relative;
     margin: 0px auto;
+    height: 500px;
 }
 
 @media(max-width:767px){

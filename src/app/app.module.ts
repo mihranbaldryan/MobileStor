@@ -13,6 +13,7 @@ import { Section2Component } from './article/sections/section2/section2.componen
 import { Section3Component } from './article/sections/section3/section3.component';
 import { ProductCardComponent } from './product-card/product-card.component';
 import { ProductPageComponent } from './product-page/product-page.component';
+import { ProductAddComponent } from './product-add/product-add.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +27,7 @@ import { ProductPageComponent } from './product-page/product-page.component';
     Section3Component,
     ProductCardComponent,
     ProductPageComponent,
+    ProductAddComponent,
 
   ],
   imports: [

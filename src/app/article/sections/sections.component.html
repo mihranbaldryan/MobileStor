@@ -13,4 +13,8 @@
   </a>
 </div>
 
-<app-section1></app-section1>
+<div class="products">
+  <app-product-card *ngFor="let cards of product[0]" [card]='cards'></app-product-card>
+  <app-product-card *ngFor="let cards of product[1]" [card]='cards'></app-product-card>
+  <app-product-card *ngFor="let cards of product[2]" [card]='cards'></app-product-card>
+</div>

@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.component {
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+}
+
+.pSection1 {
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    background-color: #e6e6e6;
+}
+
+.pSection2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.pPhoto {
+    display: flex;
+    justify-content: flex-start;
+    width: 60%;
+}
+
+.pInfo {
+    width: 40%;
+}

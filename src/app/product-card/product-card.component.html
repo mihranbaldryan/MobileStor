@@ -3,14 +3,14 @@
 <div class="content">
 <div id="make-3D-space">
     <div id="product-card">
-            <img style="max-width: 230px;min-height: 300px;" src="../../assets/images/mobile/s9.png" alt="" />
+            <img style="width: 230px;min-height: 300px;max-height: 400px;" src='{{ card.img }}' alt="" />
             <div class="image_overlay"></div>
-            <div id="view_details">More</div>
+            <div id="view_details"><a href="">More</a></div>
             <div class="stats">        	
                 <div class="stats-container">
-                    <span class="product_price">$1100</span>
-                    <span class="product_name">Samsung</span>    
-                    <p>Galaxy S9</p>                                            
+                    <span class="product_price">{{ card.price }}</span>
+                    <span class="product_name">{{ card.company }}</span>    
+                    <p>{{ card.model }}</p>                                            
                     <div class="product-options">
                     <div class="clear"></div>
                       <div class="productInfo">
@@ -24,6 +24,7 @@
     </div>	
 </div>	
 </div>
+
 
 
 
