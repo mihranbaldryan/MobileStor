@@ -14,6 +14,25 @@ import { Section3Component } from './article/sections/section3/section3.componen
 import { ProductCardComponent } from './product-card/product-card.component';
 import { ProductPageComponent } from './product-page/product-page.component';
 import { ProductAddComponent } from './product-add/product-add.component';
+
+import {RouterModule , Routes} from '@angular/router';
+const appRoutes:Routes=[
+
+  {
+    path:'',
+    component: ArticleComponent
+  },
+  {
+    path:'ProductSection1',
+    component: Section1Component
+  },
+ 
+  {
+    path:'ProductPage',
+    component:ProductPageComponent
+  }]
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +49,7 @@ import { ProductAddComponent } from './product-add/product-add.component';
     ProductAddComponent,
 
   ],
-  imports: [
+  imports: [RouterModule.forRoot(appRoutes), 
     BrowserModule,BrowserAnimationsModule
   ],
   providers: [],

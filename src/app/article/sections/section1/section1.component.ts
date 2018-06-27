@@ -6,7 +6,7 @@ import { ProductCardComponent } from '../../../product-card/product-card.compone
   templateUrl: './section1.component.html',
   styleUrls: ['./section1.component.css']
 })
-export class Section1Component implements OnInit {
+export class Section1Component extends ProductCardComponent implements OnInit {
 
   // constructor() { }
 
