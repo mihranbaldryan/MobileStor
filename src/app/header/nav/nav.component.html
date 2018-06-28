@@ -1,15 +1,15 @@
 <div class="contentP" >
-<div class="content">
+<div class="content" id="nav">
     <div class="logo">
-        <a href="#"><img id="logo" src="../../../assets/images/logo.png" alt=""></a>
+        <a routerLink=""><img id="logo" src="../../../assets/images/logo.png" alt=""></a>
     </div>
     <div class="menu">
-        <a class="navBar" href="#">Home</a>
-        <a class="navBar" href="#">Trend</a>
-        <a class="navBar" href="#">Mobile</a>
-        <a class="navBar" href="#">Tablet</a>
-        <a class="navBar" href="#">Accessories</a>
-        <a class="navBar" href="#">Contacts</a>
+        <!-- <a class="navBar" routerLink="" >Home</a> -->
+        <a class="navBar" routerLink="/trend" >Trend</a>
+        <a class="navBar" routerLink="/mobile" >Mobile</a>
+        <a class="navBar" routerLink="/tablet" >Tablet</a>
+        <a class="navBar" routerLink="/accessories" >Accessories</a>
+        <a class="navBar" routerLink="/contacts" >Contacts</a>
     </div> 
     <div class="search">
         <a href="#"><img id="logo" src="../../../assets/images/smartphone.png" alt=""></a>
@@ -30,13 +30,13 @@
     <div (click)="startAnime()"  id="close"></div>
     <div id="sabmenuP">
     <div class="sabmenu" [@start2]='state'>
-        <a class="a2" href="#">Home</a>
-        <a class="a2" href="#">Trends</a>
-        <a class="a2" href="#">Mobile</a>
-        <a class="a2" href="#">Tablets</a>
-        <a class="a2" href="#">Accessories</a>
-        <a class="a2" href="#">Contacts</a>
-        <a class="a2" href="#">About us</a>
+        <a class="a2" routerLink="">Home</a>
+        <a class="a2" routerLink="/trend">Trend</a>
+        <a class="a2" routerLink="/mobile">Mobile</a>
+        <a class="a2" routerLink="/tablet">Tablets</a>
+        <a class="a2" routerLink="/accessories">Accessories</a>
+        <a class="a2" routerLink="/contact">Contacts</a>
+        <a class="a2" routerLink="/about">About us</a>
     <div id="netWork">
         <div id="sp"></div>
         <div id="sp1"></div>

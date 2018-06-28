@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import * as $ from 'jquery';
 import {Router} from '@angular/router';
+
 @Component({
   selector: 'app-product-card',
   templateUrl: './product-card.component.html',
@@ -13,11 +14,11 @@ export class ProductCardComponent implements OnInit {
   constructor(protected router:Router){
     
     }
-
-    ProductPage(){
+      
+    // ProductPage(){
    
-      this.router.navigate(['ProductPage']);
-       }
+    //   this.router.navigate(['ProductPage']);
+    //    }
 
 
   mobile = [
@@ -26,7 +27,7 @@ export class ProductCardComponent implements OnInit {
       img: '../../assets/images/mobile/s9.png',
       company: 'Samsung',
       model: 'Galaxy S9',
-      price: '$1200',
+      price: '$ 1199',
       version: 'Samsung G955',
       year: '2018',
       os: 'Android 8.0',
@@ -65,7 +66,7 @@ export class ProductCardComponent implements OnInit {
       img: '../../assets/images/mobile/iphonex.jpg',
       company: 'Apple',
       model: 'Iphone X 256GB',
-      price: '$1600',
+      price: '$ 1599',
       version: 'Iphone X',
       year: '2017',
       os: 'iOS',
@@ -104,7 +105,7 @@ export class ProductCardComponent implements OnInit {
       img: '../../assets/images/mobile/nokia8.jpg',
       company: 'Nokia',
       model: '8 Sirocco',
-      price: '$900',
+      price: '$ 899',
       version: '8 Sirocca',
       year: '2018',
       os: 'Android',
@@ -143,7 +144,7 @@ export class ProductCardComponent implements OnInit {
       img: '../../assets/images/mobile/sonyxz.jpeg',
       company: 'Sony',
       model: 'Xperia XZ dual',
-      price: '$600',
+      price: '$ 599',
       version: 'Sony F8332',
       year: '2016',
       os: 'Android',
@@ -182,7 +183,7 @@ export class ProductCardComponent implements OnInit {
       img: '../../assets/images/mobile/htcu11.jpg',
       company: 'HTC',
       model: 'U 11',
-      price: '$900',
+      price: '$ 899',
       version: 'HTC U11',
       year: '2017',
       os: 'Android',
@@ -225,7 +226,7 @@ tablet = [
   img:["../../assets/images/tablet/AppleiPadPro.jpg"],
   company :'Apple',
   model:' iPad Pro 10.5 ',
-  price:'$ 900',
+  price:'$ 899',
   // version :'G960',
   year:'2017',
   os :'iOS 10.3.2, upgradable to iOS 11.2.5',
@@ -266,7 +267,7 @@ tablet = [
   img:["../../assets/images/tablet/SamsungGalaxyTabS2.jpg"],
   company :'Samsung',
   model:'Galaxy Tab S2 8.0 T719 ',
-  price:'$ 400',
+  price:'$ 399',
   // version :'G960',
   year:'2015',
   os :'Android 6.0.1',
@@ -306,7 +307,7 @@ tablet = [
   img:["../../assets/images/tablet/LenovoTab7.jpg"],
   company :'Lenovo',
   model:' Tab 7 (TB-7504X) ',
-  price:'$ 150',
+  price:'$ 149',
   // version :'G960',
   year:'2017',
   os :'Android 7.0',
@@ -348,7 +349,7 @@ tablet = [
   img:["../../assets/images/tablet/AppleiPadPro12.9.jpg"],
   company :'Apple',
   model:' iPad Pro 12.9  ',
-  price:'$ 1100',
+  price:'$ 1099',
   // version :'G960',
   year:'2017',
   os :'iOS 10.3.2, upgradable to iOS 11.2',
@@ -387,7 +388,7 @@ tablet = [
   img:["../../assets/images/tablet/SamsungGalaxyTabS3.jpg"],
   company :'Samsung',
   model:'Galaxy Tab S3 9.7 T825 ',
-  price:'$ 800',
+  price:'$ 799',
   // version :'G960',
   year:'2017',
   os :'Android 7.0',
@@ -431,35 +432,35 @@ tablet = [
       img: '../../assets/images/accessories/appleairpod.jpeg',
       company: 'Apple',
       model: 'EarPods lightning',
-      price: '$45',
+      price: '$ 45',
     },
     
     {
       img: '../../assets/images/accessories/bearts.png',
       company: 'Beats',
       model: 'EP On-Ear',
-      price: '$120',
+      price: '$ 119',
     },
 
     {
       img: '../../assets/images/accessories/applekoch.jpg',
       company: 'Apple',
       model: 'USB power adapter 5W',
-      price: '$25',
+      price: '$ 25',
     },
 
     {
       img: '../../assets/images/accessories/cabelusb.jpg',
       company: 'Havit',
       model: 'HV-CB534 Micro USB',
-      price: '$10',
+      price: '$ 10',
     },
 
     {
       img: '../../assets/images/accessories/pill.jpg',
       company: 'Beeats',
       model: 'Loudspeaker Beats Pill+',
-      price: '$300',
+      price: '$ 299',
     }
   
   ]
@@ -471,8 +472,6 @@ tablet = [
   ];
 
  
-  
-
 
   ngOnInit() {}
 

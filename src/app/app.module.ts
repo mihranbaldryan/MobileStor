@@ -14,8 +14,9 @@ import { Section3Component } from './article/sections/section3/section3.componen
 import { ProductCardComponent } from './product-card/product-card.component';
 import { ProductPageComponent } from './product-page/product-page.component';
 import { ProductAddComponent } from './product-add/product-add.component';
+import { FooterComponent } from './footer/footer.component';
+import { RouterModule , Routes} from '@angular/router';
 
-import {RouterModule , Routes} from '@angular/router';
 const appRoutes:Routes=[
 
   {
@@ -23,14 +24,23 @@ const appRoutes:Routes=[
     component: ArticleComponent
   },
   {
-    path:'ProductSection1',
+    path:'mobile',
     component: Section1Component
   },
- 
   {
-    path:'ProductPage',
+    path:'tablet',
+    component: Section2Component
+  },
+  {
+    path:'accessories',
+    component: Section3Component
+  },
+  {
+    path:'product',
     component:ProductPageComponent
-  }]
+  }
+
+]
 
 
 @NgModule({
@@ -47,6 +57,8 @@ const appRoutes:Routes=[
     ProductCardComponent,
     ProductPageComponent,
     ProductAddComponent,
+    FooterComponent,
+    
 
   ],
   imports: [RouterModule.forRoot(appRoutes), 

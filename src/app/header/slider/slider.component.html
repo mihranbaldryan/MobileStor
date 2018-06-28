@@ -1,5 +1,2 @@
-<div class="component">
-    <div class="sliderPics">
-        <img [src]="sliderPicsUrl[i]" alt="" id="sliderPics">
-    </div>
-</div>
+<div class="sliderPics" [ngStyle]="{ 'background-image': 'url(' + sliderPicsUrl[i] + ')'}"> </div>
+ 

@@ -18,8 +18,10 @@ export class SliderComponent implements OnInit {
 
 
   sliderPicsUrl = [
-    '../../../assets/images/slider/slide1.png',
+    '../../../assets/images/slider/slide1.jpg',
     '../../../assets/images/slider/slide2.jpg',    
+    '../../../assets/images/slider/slide3.jpg',    
+    '../../../assets/images/slider/slide4.jpg',    
   ]
 
   slideTime(){
