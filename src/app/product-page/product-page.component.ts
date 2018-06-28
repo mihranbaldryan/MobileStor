@@ -1,20 +1,21 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import {Router} from '@angular/router';
-import { ProductCardComponent } from '../product-card/product-card.component';
-
+import { Component, OnInit  } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-product-page',
-  inputs: ['card'],
+  inputs: ["card"],
   templateUrl: './product-page.component.html',
   styleUrls: ['./product-page.component.css'] 
 })
 export class ProductPageComponent implements OnInit {
-  card:any;
-  constructor() { }
-
-   ngOnInit() {
+    card;
+  public constructor(private route: ActivatedRoute) {
+    this.route.queryParams.subscribe(params => {
+      this.card=params;
+    })
    }
 
+  ngOnInit() {
+  }
 
 }

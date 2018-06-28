@@ -30,7 +30,7 @@
 <div>
     <div (click)="startAnime()"  id="close"></div>
     <div id="sabmenuP">
-    <div class="sabmenu" [@start2]='state'>
+    <div class="sabmenu" [@start2]='state' (click)="startAnime()" id="sabMenuId">
         <a class="a2" routerLink="">Home</a>
         <a class="a2" routerLink="/trend">Trend</a>
         <a class="a2" routerLink="/mobile">Mobile</a>

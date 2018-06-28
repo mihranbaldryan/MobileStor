@@ -14,12 +14,13 @@ export class ProductCardComponent implements OnInit {
   constructor(protected router:Router){
     
     }
-      
+          
     // ProductPage(){
    
     //   this.router.navigate(['ProductPage']);
     //    }
 
+  
 
   mobile = [
 
@@ -50,7 +51,7 @@ export class ProductCardComponent implements OnInit {
       network3G: 'Yes',
       nfc: 'Yes',
       networkLte4G: 'Yes',
-      chorgingConnectorType: 'USB Type-C',
+      charingConnectorType: 'USB Type-C',
       talkTime: 'Up to 22 h (3G)',
       batteryType: 'Non-Removalbe Li-Ion',
       batteryCapacity: '3000 mAh',
@@ -89,7 +90,7 @@ export class ProductCardComponent implements OnInit {
       network3G: 'Yes',
       nfc: 'Yes',
       networkLte4G: 'Yes',
-      chorgingConnectorType: 'Lightning connector',
+      charingConnectorType: 'Lightning connector',
       talkTime: 'Up to 21 h (3G)',
       batteryType: 'Li-Ion',
       batteryCapacity: '2716 mAh',
@@ -128,7 +129,7 @@ export class ProductCardComponent implements OnInit {
       network3G: 'Yes',
       nfc: 'Yes',
       networkLte4G: 'Yes',
-      chorgingConnectorType: 'USB Type-C',
+      charingConnectorType: 'USB Type-C',
       talkTime: 'Up to 22 h (3G)',
       batteryType: 'Li-Ion',
       batteryCapacity: '3260 mAh',
@@ -167,7 +168,7 @@ export class ProductCardComponent implements OnInit {
       network3G: 'Yes',
       nfc: 'Yes',
       networkLte4G: 'Yes',
-      chorgingConnectorType: 'Type-C 1.0 reversible connector; USB Host',
+      charingConnectorType: 'Type-C 1.0 reversible connector; USB Host',
       talkTime: 'Up to 17 h 30min (3G)',
       batteryType: 'Non-Removalbe Li-Ion',
       batteryCapacity: '2900 mAh',
@@ -206,7 +207,7 @@ export class ProductCardComponent implements OnInit {
       network3G: 'Yes',
       nfc: 'Yes',
       networkLte4G: 'Yes',
-      chorgingConnectorType: 'Type-C 1.0 reversible connector',
+      charingConnectorType: 'Type-C 1.0 reversible connector',
       talkTime: 'Up to 25 h 30 min (3G)',
       batteryType: 'Non-Removalbe Li-Ion',
       batteryCapacity: '3000 mAh',
@@ -249,7 +250,7 @@ tablet = [
   network3G:'No',
   nfc:'No',
   networkLte4G :'No',
-  chorgingConnectorType:'3.0, proprietary reversible connector; magnetic connector',
+  charingConnectorType:'3.0, proprietary reversible connector; magnetic connector',
   talkTime:'Up to 10 h (multimedia)',
   batteryType:'Non-removable Li-Ion',
   batteryCapacity:'8134 mAh',
@@ -290,7 +291,7 @@ tablet = [
   network3G:'Yes',
   // nfc:'Yes',
   // networkLte4G :'Yes',
-  chorgingConnectorType:'microUSB v2.0',
+  charingConnectorType:'microUSB v2.0',
   talkTime:'Up to 27 h (3G)',
   batteryType:'Li-Ion',
   batteryCapacity:'4000 mAh',
@@ -330,7 +331,7 @@ tablet = [
   network3G:'Yes',
   nfc:'Yes',
   networkLte4G :'Yes',
-  // chorgingConnectorType:'USB Type-C',
+  // charingConnectorType:'USB Type-C',
   // talkTime:'Up to 22 h (3G)',
   batteryType:'Li-Po',
   batteryCapacity:'3500 mAh',
@@ -372,7 +373,7 @@ tablet = [
   network3G:'Yes',
   nfc:'Yes',
   networkLte4G :'Yes',
-  chorgingConnectorType:'3.0, proprietary reversible connector; magnetic connector',
+  charingConnectorType:'3.0, proprietary reversible connector; magnetic connector',
   talkTime:'Up to 10 h (multimedia)',
   batteryType:'Built‐in 41‐watt‐hour rechargeable lithium‑polymer battery',
   batteryCapacity:'10 891 mAh',
@@ -411,7 +412,7 @@ tablet = [
   network3G:'Yes',
   // nfc:'Yes',
   networkLte4G :'Yes',
-  chorgingConnectorType:'Type-C 1.0',
+  charingConnectorType:'Type-C 1.0',
   talkTime:'Up to 27 h (3G)',
   batteryType:'Non-removable',
   batteryCapacity:'6000 mAh',
@@ -469,11 +470,27 @@ tablet = [
     this.mobile,
     this.tablet,
     this.accessories
-  ];
+  ]
 
- 
 
-  ngOnInit() {}
+  ngOnInit() {
+  //   for (let all in this.product) {
+  //     console.log(all); 
+  //   }
+  //   for (let m in this.mobile) {
+  //     console.log(m); 
+  //   }
+  //   for (let t in this.tablet) {
+  //     console.log(t); 
+  //   }
+  //   for (let a in this.accessories) {
+  //     console.log(a); 
+  //   }
+  }
+
+  moreEvent(event) {
+    return this.card;
+  }
 
 
 }

@@ -27,6 +27,9 @@ $(document).ready(function(){
   $('#nav-icon').click(function(){
     $(this).toggleClass('open');
   });
+  $('#sabMenuId').click(function(){
+    $('#nav-icon').toggleClass('open')
+  })
 });
 
 // end
@@ -54,6 +57,7 @@ else{
   this.imgSrc="../../../assets/images/menu.png";
   this.state='go';
   this.state1='go1';
+  
  this.close.style.display="none";
  this.none();
  

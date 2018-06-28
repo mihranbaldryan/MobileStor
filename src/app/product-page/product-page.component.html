@@ -1,10 +1,14 @@
 <div class="component">
     <div class="pSection1">
-        <div class="pPhoto">
-            <!-- <img id="pPhoto" src="../../assets/images/mobile/s9.png" alt=""> -->
-        </div>
+        <div class="pPhoto" [ngStyle]="{ 'background-image': 'url(' + card.img + ')'}"> </div>
         <div class="pInfo">
-                <h2 style="font-weight: bold;" >Samsung Galaxy S9</h2>
+            <table>
+                <tr>
+                    <td><h2 style="font-weight: bold;" >{{ card.company }} {{ card.model }}</h2></td>
+                    <td class="pPrice">{{ card.price }}</td>
+                </tr>
+            </table>
+                
 
             <table class="table" style="margin-top: 50px;">
             <thead class="thead-light">
@@ -12,19 +16,19 @@
             <tbody>
                 <tr>
                 <th scope="row">RAM</th>
-                <td>4 GB</td>
+                <td>{{ card.ram }}</td>
                 </tr>
                 <tr>
                 <th scope="row">Announcement Year</th>
-                <td>2018</td>
+                <td>{{ card.year }}</td>
                 </tr>
                 <tr>
                 <th scope="row">Screen Resolution</th>
-                <td>2960x1440</td>
+                <td>{{ card.screenResolution }}</td>
                 </tr>
                 <tr>
                 <th scope="row">Screen Size</th>
-                <td>5.8 inch</td>
+                <td>{{ card.screenSize }}</td>
                 </tr>
                 <tr>
                 <th scope="row">Colors</th>
@@ -55,38 +59,38 @@
             </tr>
             <tr>
                 <th scope="row">Announcement Year</th>
-                <td> </td>
+                <td>{{ card.year }}</td>
             </tr>
             <tr>
                 <th scope="row">Operation System</th>
-                <td> </td>
+                <td>{{ card.os }}</td>
             </tr>
             <tr class="thead-dark">
                 <th scope="col" colspan="2">Display</th>
             </tr>
             <tr>
                 <th scope="row">Screen Type</th>
-                <td> </td>
+                <td>{{ card.screenType }} </td>
             </tr>
             <tr>
                 <th scope="row">Screen Resolution</th>
-                <td> </td>
+                <td>{{ card.screenResolution }}</td>
             </tr>
             <tr>
                 <th scope="row">Screen Size</th>
-                <td> </td>
+                <td> {{ card.screenSize }}</td>
             </tr>
             <tr class="thead-dark">
                 <th scope="col" colspan="2">Camera</th>
             </tr>
             <tr>
                 <th scope="row">Front Camera</th>
-                <td> </td>
+                <td>{{ card.frontCamera }}</td>
             </tr>
             <tr>
             <tr>
                 <th scope="row">Main Camera</th>
-                <td> </td>
+                <td> {{ card.mainCamera }}</td>
                 </tr>
             <tr>
             <tr class="thead-dark">
@@ -94,111 +98,115 @@
             </tr>
             <tr>
                 <th scope="row">Number of processor cores</th>
-                <td> </td>
+                <td>{{ card.numberOfProcessorCores }} </td>
             </tr>
             <tr>
                 <th scope="row">CPU</th>
-                <td> </td>
+                <td> {{ card.cpu }}</td>
             </tr>
             <tr>
              <tr>
                 <th scope="row">RAM</th>
-                <td> </td>
+                <td> {{ card.ram }}</td>
             </tr>
             <tr>
                 <th scope="row">Memory Card Slot</th>
-                <td> </td>
+                <td> {{ card.memoryCardSlot }}</td>
             </tr>
             <tr>
                 <th scope="row">Memory</th>
-                <td> </td>
+                <td>{{ card.memory }}</td>
             </tr>
             <tr class="thead-dark">
                 <th scope="col" colspan="2">Network</th>
             </tr>
             <tr>
                 <th scope="row">Standart Network</th>
-                <td> </td>
+                <td> {{ card.standartNetwork }}</td>
             </tr>
             <tr>
                 <th scope="row">Access to the Internet</th>
-                <td> </td>
+                <td>{{ card.accessToTheInternet }}</td>
             </tr>
             <tr>
                 <th scope="row">4G LTE Network range</th>
-                <td> </td>
+                <td>{{ card.networkRangeLte4G }} </td>
             </tr>
             <tr>
                 <th scope="row">GPS</th>
-                <td> </td>
+                <td>{{ card.gps }} </td>
             </tr>
             <tr>
             <tr>
                 <th scope="row">Bluetooth</th>
-                <td> </td>
+                <td> {{ card.bluetooth }}</td>
                 </tr>
             <tr>
             <tr>
                 <th scope="row">WiFi Network</th>
-                <td> </td>
+                <td> {{ card.wifiNetwork }}</td>
             </tr>
             <tr>
                 <th scope="row">3G Network</th>
-                <td> </td>
+                <td>network3G </td>
             </tr>
             <tr>
              <tr>
                 <th scope="row">NFC</th>
-                <td> </td>
+                <td>{{ card.nfc }}</td>
             </tr>
             <tr>
                 <th scope="row">4G LTE Network</th>
-                <td> </td>
+                <td>{{ card.networkLte4G }} </td>
             </tr>
             <tr class="thead-dark">
                 <th scope="col" colspan="2">Power</th>
             </tr>
             <tr>
                 <th scope="row">Charing Connector Type</th>
-                <td> </td>
+                <td>{{ card.charingConnectorType }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Talk Time</th>
+                <td>{{ card.talkTime }}</td>
             </tr>
             <tr>
                 <th scope="row">Battery Type</th>
-                <td> </td>
+                <td>{{ card.batteryType }}</td>
             </tr>
             <tr>
                 <th scope="row">Battery Capacity</th>
-                <td> </td>
+                <td>{{ card.batteryCapacity }} </td>
             </tr>
             <tr class="thead-dark">
                 <th scope="col" colspan="2">Other</th>
             </tr>
             <tr>
                 <th scope="row">Weight</th>
-                <td> </td>
+                <td>{{ card.weight }} </td>
             </tr>
             <tr>
                 <th scope="row">Thickness</th>
-                <td> </td>
+                <td> {{ card.thickness }}</td>
             </tr>
             <tr>
             <tr>
                 <th scope="row">Height</th>
-                <td> </td>
+                <td>{{ card.height }}</td>
                 </tr>
             <tr>
             <tr>
                 <th scope="row">Width</th>
-                <td> </td>
+                <td>{{ card.width }}</td>
             </tr>
             <tr>
                 <th scope="row">Audio</th>
-                <td> </td>
+                <td>{{ card.audio }} </td>
             </tr>
             <tr>
              <tr>
                 <th scope="row">SIM Card Quanitity</th>
-                <td> </td>
+                <td>{{ card.simCardQuantity }} </td>
             </tr>
             
         </tbody>

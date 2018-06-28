@@ -8,7 +8,6 @@ import { ProductCardComponent } from '../../product-card/product-card.component'
 })
 export class SectionsComponent extends ProductCardComponent implements OnInit {
 
-  
   constructor( protected router:Router){
     super(router);
   }

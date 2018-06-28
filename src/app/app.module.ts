@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';import { FormsModule } from '@angular/forms';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { NavComponent } from './header/nav/nav.component';
@@ -42,7 +43,7 @@ const appRoutes:Routes=[
     component: Section3Component
   },
   {
-    path:'product',
+    path:'product/:any',
     component:ProductPageComponent
   },
   {

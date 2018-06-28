@@ -57,6 +57,14 @@
     font-weight: bold; 
 }
 
+.pPrice {
+    color:#475498;
+    font-size:22px;
+    font-weight:600;
+    width: 100px;
+    text-align: center;
+}
+
 @media (max-width:900px){
     .pSection1 {
         width: 100%;
