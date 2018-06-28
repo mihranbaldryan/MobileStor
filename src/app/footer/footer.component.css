@@ -1,0 +1,78 @@
+.content {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 100px;
+    background-color: #475498;
+    
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 80%;
+
+}
+
+.logo {
+    width: 20%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.part {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.link {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center
+}
+
+.leftMenu {
+    float: left;
+    flex-direction: column;
+}
+
+
+.rightMenu {
+   float: right;
+}
+
+a {
+    padding: 5px 30px 5px 30px;
+    color: white;
+    text-decoration: none;
+    text-align: center
+}
+
+a:hover {
+    background-color: #5e6bab;
+    color: white;
+    border-bottom-left-radius: 5px ;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+

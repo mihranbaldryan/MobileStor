@@ -51,31 +51,3 @@
     width: 50%;
 }
 
-.table .thead-dark th {
-    border-color: #475498;
-    background-color: #475498;
-    font-weight: bold; 
-}
-
-@media (max-width:900px){
-    .pSection1 {
-        width: 100%;
-        height: auto;
-        flex-direction: column;
-        align-items: center;
-    }
-    .pSection2 {
-        width: 100%;
-    }
-    .pPhoto {
-        width: 90%;
-        height: 80vmin;
-    }
-    .pInfo h2 {
-        padding: 20px;
-        text-align: center;
-    }
-    .pInfo {
-        width: 90%;
-    }
-}

@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
+import { NgModule } from '@angular/core';import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { NavComponent } from './header/nav/nav.component';
@@ -16,12 +15,19 @@ import { ProductPageComponent } from './product-page/product-page.component';
 import { ProductAddComponent } from './product-add/product-add.component';
 import { FooterComponent } from './footer/footer.component';
 import { RouterModule , Routes} from '@angular/router';
+import { ContactsComponent } from './contacts/contacts.component';
+import { TrendComponent } from './trend/trend.component';
+import { AboutComponent } from './about/about.component';
 
 const appRoutes:Routes=[
 
   {
     path:'',
     component: ArticleComponent
+  },
+  {
+    path: 'trend',
+    component: TrendComponent
   },
   {
     path:'mobile',
@@ -38,6 +44,14 @@ const appRoutes:Routes=[
   {
     path:'product',
     component:ProductPageComponent
+  },
+  {
+    path: 'about',
+    component: AboutComponent
+  },
+  {
+    path: 'contacts',
+    component: ContactsComponent
   }
 
 ]
@@ -58,11 +72,15 @@ const appRoutes:Routes=[
     ProductPageComponent,
     ProductAddComponent,
     FooterComponent,
-    
-
+    ContactsComponent,
+    TrendComponent,
+    AboutComponent,
   ],
-  imports: [RouterModule.forRoot(appRoutes), 
-    BrowserModule,BrowserAnimationsModule
+  imports: [
+    RouterModule.forRoot(appRoutes), 
+    BrowserModule,
+    BrowserAnimationsModule,
+    FormsModule    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -9,6 +9,7 @@ import * as $ from 'jquery';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
+  
 state:string='go';
 state1:string="go1";
 imgSrc="../../../assets/images/menu.png";
@@ -18,18 +19,22 @@ div1;
 close;
 flag:boolean=true;
   ngOnInit() {
-    window.scrollBy(0, 1); //position fixed  միշտ  չի որ  աշխատում   է  դրա  համար գրում ենք դա
 
 
 // menu open and close
 
-    $(document).ready(function(){
-      $('#nav-icon').click(function(){
-        $(this).toggleClass('open');
-      });
-    });
-    
+$(document).ready(function(){
+  $('#nav-icon').click(function(){
+    $(this).toggleClass('open');
+  });
+});
+
 // end
+
+
+    window.scrollBy(0, 1); //position fixed  միշտ  չի որ  աշխատում   է  դրա  համար գրում ենք դա
+
+
 
 
 this.div1=document.getElementById("sabmenuP");
