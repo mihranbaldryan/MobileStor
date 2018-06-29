@@ -1,16 +1,16 @@
 <div class="contentP" >
 <div class="content" id="nav">
     <div class="logo">
-        <a routerLink=""><img id="logo" src="../../../assets/images/logo.png" alt=""></a>
+        <a routerLink="" (click)="onActivate($event)"><img id="logo" src="../../../assets/images/logo.png" alt=""></a>
     </div>
-    <div class="menu">
+    <div class="menu" (click)="onActivate($event)">
         <!-- <a class="navBar" routerLink="" >Home</a> -->
-        <a class="navBar" routerLink="/trend" >Trend</a>
+        <!-- <a class="navBar" routerLink="/trend" >Trend</a> -->
         <a class="navBar" routerLink="/mobile" >Mobile</a>
         <a class="navBar" routerLink="/tablet" >Tablet</a>
         <a class="navBar" routerLink="/accessories" >Accessories</a>
         <a class="navBar" routerLink="/contacts" >Contacts</a>
-        <a class="navBar" routerLink="/about" >About us</a>
+        <a class="navBar" routerLink="/about" >About</a>
     </div> 
     <div class="search">
         <a href="#"><img id="logo" src="../../../assets/images/smartphone.png" alt=""></a>
@@ -29,15 +29,15 @@
 
 <div>
     <div (click)="startAnime()"  id="close"></div>
-    <div id="sabmenuP">
+    <div id="sabmenuP" (click)="onActivate($event)">
     <div class="sabmenu" [@start2]='state' (click)="startAnime()" id="sabMenuId">
         <a class="a2" routerLink="">Home</a>
-        <a class="a2" routerLink="/trend">Trend</a>
+        <!-- <a class="a2" routerLink="/trend">Trend</a> -->
         <a class="a2" routerLink="/mobile">Mobile</a>
         <a class="a2" routerLink="/tablet">Tablets</a>
         <a class="a2" routerLink="/accessories">Accessories</a>
         <a class="a2" routerLink="/contacts">Contacts</a>
-        <a class="a2" routerLink="/about">About us</a>
+        <a class="a2" routerLink="/about">About</a>
     <div id="netWork">
         <div id="sp"></div>
         <div id="sp1"></div>

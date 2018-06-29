@@ -9,7 +9,9 @@ import * as $ from 'jquery';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
-  
+  onActivate(event){
+    window.scroll(0,0)
+  }
 state:string='go';
 state1:string="go1";
 imgSrc="../../../assets/images/menu.png";
@@ -28,7 +30,8 @@ $(document).ready(function(){
     $(this).toggleClass('open');
   });
   $('#sabMenuId').click(function(){
-    $('#nav-icon').toggleClass('open')
+    $('#nav-icon').toggleClass('open');
+    
   })
 });
 

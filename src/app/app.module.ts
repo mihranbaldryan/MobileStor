@@ -46,6 +46,20 @@ const appRoutes:Routes=[
     path:'product/:any',
     component:ProductPageComponent
   },
+  /*
+  {
+    path: 'product/mobile/:any',
+    component: MobileComponent
+  },
+  {
+    path: 'product/tablet/:any',
+    component: TabletComponent
+  },
+  {
+    path: 'product/accessories/:any',
+    component: AccessoriesComponent
+  },
+  */
   {
     path: 'about',
     component: AboutComponent

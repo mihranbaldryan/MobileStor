@@ -10,9 +10,10 @@ import {Router} from '@angular/router';
 export class ProductCardComponent implements OnInit {
 
   @Input() card;
+  
 
   constructor(protected router:Router){
-    
+
     }
           
     // ProductPage(){
@@ -121,7 +122,7 @@ export class ProductCardComponent implements OnInit {
       memoryCardSlot: 'No',
       memory: '128 GB',
       standartNetwork: 'GSM850, GSM900, DCS1800, PCS1900',
-      // accessToTheInternet: 'GPRS, EDGE',
+      accessToTheInternet: '',
       networkRangeLte4G: 'LTE band 1(2100), 2(1900), 3(1800), 4(1700/2100), 5(850), 7(2600), 8(900), 20(800), 28(700), 34(2000), 38(2600), 39(1900), 40(2300), 41(2500)',
       gps: 'Yes',
       bluetooth: 'Yes',
@@ -137,8 +138,8 @@ export class ProductCardComponent implements OnInit {
       thickness: '7.5 mm',
       height: '140.93 mm',
       width: '72.97 mm',
-      //audio: 'MP3, M4A, 3GA, AAC, OGG, OGA, WAV, WMA, AMR, AWB, FLAC, MID, MIDI, XMF, MXMF, IMY, RTTTL, RTX, OTA, DFF, DSF, APE',
-      //simCardQuantity: '2 SIM',
+      audio: '',
+      simCardQuantity: '2 SIM',
     },
     
     {
@@ -154,12 +155,12 @@ export class ProductCardComponent implements OnInit {
       screenSize: '5.2 inch',
       frontCamera: '13 MP',
       mainCamera: '23 MP',
-      // numberOfProcessorCores: '8',
+      numberOfProcessorCores: '',
       cpu: 'Quad-core (2x2.15 GHz Kryo & 2x1.6 GHz Kryo)',
       ram: '3 GB',
       memoryCardSlot: 'Yes',
       memory: '64 GB',
-      // standartNetwork: 'GSM850, GSM900, DCS1800, PCS1900',
+      standartNetwork: '',
       accessToTheInternet: 'GPRS, EDGE',
       networkRangeLte4G: 'LTE band 1(2100), 2(1900), 3(1800), 4(1700/2100), 5(850), 7(2600), 8(900), 12(700), 13(700), 17(700), 19(800), 20(800), 26(850), 28(700), 29(700), 32(1500), 38(2600), 39(1900), 40(2300), 41(2500)',
       gps: 'Yes',
@@ -193,12 +194,12 @@ export class ProductCardComponent implements OnInit {
       screenSize: '5.5 inch',
       frontCamera: '16 MP',
       mainCamera: '12 MP',
-      // numberOfProcessorCores: '8',
+      numberOfProcessorCores: '',
       cpu: 'Octa-core (4x2.45 GHz Kryo & 4x1.9 GHz Kryo)',
       ram: '4 GB',
       memoryCardSlot: 'Yes',
       memory: '64 GB',
-      // standartNetwork: 'GSM850, GSM900, DCS1800, PCS1900',
+      standartNetwork: '',
       accessToTheInternet: 'GPRS, EDGE',
       networkRangeLte4G: 'LTE band 1(2100), 3(1800), 4(1700/2100), 5(850), 7(2600), 8(900), 12(700), 17(700), 20(800), 28(700), 32(1500), 38(2600), 39(1900), 40(2300), 41(2500)',
       gps: 'Yes',
@@ -228,7 +229,7 @@ tablet = [
   company :'Apple',
   model:' iPad Pro 10.5 ',
   price:'$ 899',
-  // version :'G960',
+  version :'',
   year:'2017',
   os :'iOS 10.3.2, upgradable to iOS 11.2.5',
   screenType :'LED-backlit IPS LCD, capacitive touchscreen, 16M colors',
@@ -236,14 +237,14 @@ tablet = [
   screenSize:'10.5 inch',
   frontCamera:'7 MP',
   mainCamera: '12 MP',
-  // numberOfProcessorCores :'8',
+  numberOfProcessorCores :'',
   cpu:'Apple A10X Fusion',
   ram:'4 GB',
   memoryCardSlot :'No',
   memory :'64 GB',
-  // standartNetwork :'GSM850, GSM900, DCS1800, PCS1900',
-  // accessToTheInternet:'GPRS, EDGE',
-  // networkRangeLte4G:'B1(2100), B2(1900), B3(1800), B4(AWS), B5(850), B7(2600), B8(900), B12(700), B13(700), B17(700), B18(800), B19(800), B20(800), B25(1900), B26(850), B28(700), B32(1500), B66(AWS-3)',
+  standartNetwork :'',
+  accessToTheInternet:'',
+  networkRangeLte4G:'',
   gps:'Yes',
   bluetooth : 'Yes',
   wifiNetwork: 'Yes',
@@ -258,8 +259,8 @@ tablet = [
   thickness: '6.1 mm (0.24 in)',
   height:'250.6 mm (9.87 in)',
   width:'174.1 mm (6.85 in)',
-  // audio:'MP3, M4A, 3GA, AAC, OGG, OGA, WAV, WMA, AMR, AWB, FLAC, MID, MIDI, XMF, MXMF, IMY, RTTTL, RTX, OTA, DFF, DSF, APE',
-  // simCardQuantity: '2 SIM',
+  audio:'',
+  simCardQuantity: '',
 },
 
 
@@ -269,7 +270,7 @@ tablet = [
   company :'Samsung',
   model:'Galaxy Tab S2 8.0 T719 ',
   price:'$ 399',
-  // version :'G960',
+  version :'',
   year:'2015',
   os :'Android 6.0.1',
   screenType :'Super AMOLED capacitive touchscreen, 16M colors',
@@ -277,20 +278,20 @@ tablet = [
   screenSize:'8.0 inch',
   frontCamera:'2.1 megapixel',
   mainCamera: '8 MP',
-  // numberOfProcessorCores :'8',
+  numberOfProcessorCores :'',
   cpu:'Quad-core 1.8 GHz Cortex-A72 & quad-core 1.4 GHz Cortex-A53',
   ram:'3 GB',
   memoryCardSlot :'Yes',
-  // memory :'64 GB',
+  memory :'',
   standartNetwork :'GSM 850 / 900 / 1800 / 1900',
   accessToTheInternet:'GPRS, EDGE',
-  // networkRangeLte4G:'B1(2100), B2(1900), B3(1800), B4(AWS), B5(850), B7(2600), B8(900), B12(700), B13(700), B17(700), B18(800), B19(800), B20(800), B25(1900), B26(850), B28(700), B32(1500), B66(AWS-3)',
+  networkRangeLte4G:'',
   gps:'Yes',
   bluetooth : 'Yes',
   wifiNetwork: 'Yes',
   network3G:'Yes',
-  // nfc:'Yes',
-  // networkLte4G :'Yes',
+  nfc:'',
+  networkLte4G :'',
   charingConnectorType:'microUSB v2.0',
   talkTime:'Up to 27 h (3G)',
   batteryType:'Li-Ion',
@@ -300,7 +301,7 @@ tablet = [
   height:'198.6 mm (7.82 in)',
   width:'134.8 mm ( 5.31 in)',
   audio:'Vibration; MP3, WAV ringtones',
-  // simCardQuantity: '2 SIM',
+  simCardQuantity: '',
 },
 
 
@@ -309,7 +310,7 @@ tablet = [
   company :'Lenovo',
   model:' Tab 7 (TB-7504X) ',
   price:'$ 149',
-  // version :'G960',
+  version :'',
   year:'2017',
   os :'Android 7.0',
   screenType :'IPS LCD Multiouch',
@@ -322,25 +323,25 @@ tablet = [
   ram:'1 GB',
   memoryCardSlot :'Yes',
   memory :'16 GB',
-  // standartNetwork :'GSM850, GSM900, DCS1800, PCS1900',
-  // accessToTheInternet:'GPRS, EDGE',
-  // networkRangeLte4G:'B1(2100), B2(1900), B3(1800), B4(AWS), B5(850), B7(2600), B8(900), B12(700), B13(700), B17(700), B18(800), B19(800), B20(800), B25(1900), B26(850), B28(700), B32(1500), B66(AWS-3)',
+  standartNetwork :'',
+  accessToTheInternet:'',
+  networkRangeLte4G:'',
   gps:'Yes',
   bluetooth : 'Yes',
   wifiNetwork: 'Yes',
   network3G:'Yes',
   nfc:'Yes',
   networkLte4G :'Yes',
-  // charingConnectorType:'USB Type-C',
-  // talkTime:'Up to 22 h (3G)',
+  charingConnectorType:'',
+  talkTime:'',
   batteryType:'Li-Po',
   batteryCapacity:'3500 mAh',
   weight :'260 g',
   thickness: '8.4 mm',
   height:'193 mm',
   width:'98.7 mm',
-  // audio:'MP3, M4A, 3GA, AAC, OGG, OGA, WAV, WMA, AMR, AWB, FLAC, MID, MIDI, XMF, MXMF, IMY, RTTTL, RTX, OTA, DFF, DSF, APE',
-  // simCardQuantity: '2 SIM',
+  audio:'',
+  simCardQuantity: '',
 },
 
 
@@ -351,7 +352,7 @@ tablet = [
   company :'Apple',
   model:' iPad Pro 12.9  ',
   price:'$ 1099',
-  // version :'G960',
+  version :'',
   year:'2017',
   os :'iOS 10.3.2, upgradable to iOS 11.2',
   screenType :'LED-backlit IPS LCD, capacitive touchscreen, 16M colors',
@@ -359,7 +360,7 @@ tablet = [
   screenSize:'12.9 inch',
   frontCamera:'7 MP',
   mainCamera: '12 MP',
-  // numberOfProcessorCores :'8',
+  numberOfProcessorCores :'',
   cpu:'Apple A10X Fusion',
   ram:'4 GB',
   memoryCardSlot :'No',
@@ -381,8 +382,8 @@ tablet = [
   thickness: '6.9 mm (0.27 in)',
   height:'305.7 mm (12.04 in)',
   width:'220.6 mm (8.69 in)',
-  // audio:'MP3, M4A, 3GA, AAC, OGG, OGA, WAV, WMA, AMR, AWB, FLAC, MID, MIDI, XMF, MXMF, IMY, RTTTL, RTX, OTA, DFF, DSF, APE',
-  // simCardQuantity: '2 SIM',
+  audio:'',
+  simCardQuantity: '',
 },
 
 {
@@ -390,7 +391,7 @@ tablet = [
   company :'Samsung',
   model:'Galaxy Tab S3 9.7 T825 ',
   price:'$ 799',
-  // version :'G960',
+  version :'',
   year:'2017',
   os :'Android 7.0',
   screenType :'Super AMOLED capacitive touchscreen, 16M colors',
@@ -398,7 +399,7 @@ tablet = [
   screenSize:'9.7 inch',
   frontCamera:'5 MP',
   mainCamera: '13 MP',
-  // numberOfProcessorCores :'8',
+  numberOfProcessorCores :'',
   cpu:'Quad-core (2x2.15 GHz Kryo & 2x1.6 GHz Kryo)',
   ram:'4 GB',
   memoryCardSlot :'Yes',
@@ -410,7 +411,7 @@ tablet = [
   bluetooth : 'Yes',
   wifiNetwork: 'Yes',
   network3G:'Yes',
-  // nfc:'Yes',
+  nfc:'',
   networkLte4G :'Yes',
   charingConnectorType:'Type-C 1.0',
   talkTime:'Up to 27 h (3G)',
@@ -421,7 +422,7 @@ tablet = [
   height:'237.3 mm (9.34 in)',
   width:'169 mm (6.65 in)',
   audio:'Vibration; MP3, WAV ringtones',
-  // simCardQuantity: '2 SIM',
+  simCardQuantity: '',
   },
 
 ]
@@ -474,18 +475,6 @@ tablet = [
 
 
   ngOnInit() {
-  //   for (let all in this.product) {
-  //     console.log(all); 
-  //   }
-  //   for (let m in this.mobile) {
-  //     console.log(m); 
-  //   }
-  //   for (let t in this.tablet) {
-  //     console.log(t); 
-  //   }
-  //   for (let a in this.accessories) {
-  //     console.log(a); 
-  //   }
   }
 
   moreEvent(event) {
