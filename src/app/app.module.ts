@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { NavComponent } from './header/nav/nav.component';
@@ -19,6 +19,7 @@ import { RouterModule , Routes} from '@angular/router';
 import { ContactsComponent } from './contacts/contacts.component';
 import { TrendComponent } from './trend/trend.component';
 import { AboutComponent } from './about/about.component';
+import { MatStepperModule, MatIconModule, MatButtonModule, MatFormFieldModule, MatInputModule, MatOptionModule, MatSelectModule, MatRadioButton, MatRadioModule } from '@angular/material';
 
 const appRoutes:Routes=[
 
@@ -46,20 +47,6 @@ const appRoutes:Routes=[
     path:'product/:any',
     component:ProductPageComponent
   },
-  /*
-  {
-    path: 'product/mobile/:any',
-    component: MobileComponent
-  },
-  {
-    path: 'product/tablet/:any',
-    component: TabletComponent
-  },
-  {
-    path: 'product/accessories/:any',
-    component: AccessoriesComponent
-  },
-  */
   {
     path: 'about',
     component: AboutComponent
@@ -67,8 +54,11 @@ const appRoutes:Routes=[
   {
     path: 'contacts',
     component: ContactsComponent
+  },
+  {
+    path: 'add',
+    component: ProductAddComponent
   }
-
 ]
 
 
@@ -90,12 +80,23 @@ const appRoutes:Routes=[
     ContactsComponent,
     TrendComponent,
     AboutComponent,
+
   ],
   imports: [
     RouterModule.forRoot(appRoutes), 
     BrowserModule,
     BrowserAnimationsModule,
-    FormsModule    
+    FormsModule,
+    ReactiveFormsModule,
+    MatFormFieldModule, 
+    MatStepperModule,
+    MatIconModule,
+    MatButtonModule,
+    MatInputModule,
+    MatStepperModule,
+    MatOptionModule,
+    MatSelectModule,
+    MatRadioModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
