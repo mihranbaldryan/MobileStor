@@ -20,6 +20,8 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { TrendComponent } from './trend/trend.component';
 import { AboutComponent } from './about/about.component';
 import { MatStepperModule, MatIconModule, MatButtonModule, MatFormFieldModule, MatInputModule, MatOptionModule, MatSelectModule, MatRadioButton, MatRadioModule } from '@angular/material';
+import { ImageUploadModule } from "angular2-image-upload";
+
 
 const appRoutes:Routes=[
 
@@ -97,6 +99,8 @@ const appRoutes:Routes=[
     MatOptionModule,
     MatSelectModule,
     MatRadioModule,
+    ImageUploadModule.forRoot(),
+
   ],
   providers: [],
   bootstrap: [AppComponent]

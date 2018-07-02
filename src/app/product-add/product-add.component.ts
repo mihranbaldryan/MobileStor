@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, } from '@angular/forms';
 import { FormControl } from '@angular/forms';
+import * as $ from 'jquery'
 
 @Component({
   selector: 'app-product-add',
@@ -8,33 +9,34 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./product-add.component.css']
 })
 export class ProductAddComponent implements OnInit {
-
-  isEditable = true ;
-  isLinear = false;
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
+  isEditable = false;
+  isOptional = false;
 
   constructor(private _formBuilder: FormBuilder) {}
-
+  
   years:number[] = [];
   opSystems:string[] = [];
-  rams:string[] = ['0.5 GB'];
+  rams:number[] = [0.5];
   memoryList:number[] = [];
   accessInet = new FormControl();
   accessInetList: string[] = [];
+  simCards: number[] = [];
+  audio = new FormControl();
+  audioList:string[] = [];
+  companyList:string[] = [];
+
 
   ngOnInit() {
     this.firstFormGroup = this._formBuilder.group({
+  //    firstCtrl0: ['', Validators.required],
       firstCtrl1: ['', Validators.required],
       firstCtrl2: ['', Validators.required],
       firstCtrl3: ['', Validators.required],
-      firstCtrl4: ['', Validators.required],
-      firstCtrl5: ['', Validators.required]
     });
     this.secondFormGroup = this._formBuilder.group({
-      secondCtrl: ['', Validators.required],
-      secondCtrl1: ['', Validators.required],
-      secondCtrl2: ['', Validators.required]
+      // secondCtrl: ['', Validators.required],
 
     });
   
@@ -42,11 +44,20 @@ export class ProductAddComponent implements OnInit {
       this.years.push(i);
     }
     for(let i=1;i<=16;i++){
-      this.rams.push(i + ' GB')
+      this.rams.push(i)
     }
-    this.opSystems.push('Androud','iOS','Windows');
+    this.opSystems.push('Android','iOS','Windows');
     this.memoryList.push(4,8,10,16,32,64,128,256);
     this.accessInetList.push('GPRS','EDGE');
+    this.simCards.push(1,2,3)
+    this.audioList.push('MP3','M4A','3GA','AAC','OGG','OGA','WAV','WMA','AMR','AWB','FLAC','MID','MIDI','XFM','MXMF','IMY','RTTTL','RTX','OTA','DFF','DSF','APE')
+    this.companyList.push('Samsung','Apple','Lenovo','Nokia','Motorola','HTC','Microsoft','Sony','Micromax','Fly','LG')
+  
+  
     
+  
   }  
+
+
+
 }
