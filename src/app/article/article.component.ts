@@ -1,17 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductCardComponent } from '../product-card/product-card.component';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-article',
   templateUrl: './article.component.html',
   styleUrls: ['./article.component.css']
 })
-export class ArticleComponent extends ProductCardComponent implements OnInit {
-
-  
- // constructor() { }
+export class ArticleComponent implements OnInit {
 
   ngOnInit() {
+    
   }
 
 }

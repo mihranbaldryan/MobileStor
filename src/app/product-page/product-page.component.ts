@@ -9,7 +9,9 @@ import * as $ from 'jquery';
   styleUrls: ['./product-page.component.css'] 
 })
 export class ProductPageComponent implements OnInit {
-    card;
+  card;
+
+  ['title']='card.model' 
 
   public constructor(private route: ActivatedRoute) {
     this.route.queryParams.subscribe(params => {

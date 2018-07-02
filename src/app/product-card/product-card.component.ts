@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import * as $ from 'jquery';
 import {Router} from '@angular/router';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-product-card',
@@ -10,19 +11,7 @@ import {Router} from '@angular/router';
 export class ProductCardComponent implements OnInit {
 
   @Input() card;
-  
-
-  constructor(protected router:Router){
-
-    }
-          
-    // ProductPage(){
-   
-    //   this.router.navigate(['ProductPage']);
-    //    }
-
-  
-
+    
   mobile = [
 
     {

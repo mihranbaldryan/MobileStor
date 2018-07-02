@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {start,start1,start2,start3} from '../../_animations/animation'
 import * as $ from 'jquery';
+import { Title } from '@angular/platform-browser'
 
 @Component({
   selector: 'app-nav',
@@ -9,13 +10,19 @@ import * as $ from 'jquery';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
+
+  constructor(private titleService: Title){}
+  
+  public setTitle( newTitle: string) {
+    this.titleService.setTitle( newTitle );
+  }
+
   onActivate(event){
     window.scroll(0,0)
   }
 state:string='go';
 state1:string="go1";
 imgSrc="../../../assets/images/menu.png";
-  constructor() { }
 
 div1;
 close;

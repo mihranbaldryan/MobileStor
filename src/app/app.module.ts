@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
@@ -22,44 +22,52 @@ import { AboutComponent } from './about/about.component';
 import { MatStepperModule, MatIconModule, MatButtonModule, MatFormFieldModule, MatInputModule, MatOptionModule, MatSelectModule, MatRadioButton, MatRadioModule } from '@angular/material';
 import { ImageUploadModule } from "angular2-image-upload";
 
-
 const appRoutes:Routes=[
 
   {
     path:'',
-    component: ArticleComponent
+    component: ArticleComponent,
+    data: { title: 'Home' } 
   },
-  {
-    path: 'trend',
-    component: TrendComponent
-  },
+  // {
+  //   path: 'trend',
+  //   component: TrendComponent,
+  //   data: { title: '' } 
+  // },
   {
     path:'mobile',
-    component: Section1Component
+    component: Section1Component,
+    data: { title: 'Mobile' } 
   },
   {
     path:'tablet',
-    component: Section2Component
+    component: Section2Component,
+    data: { title: 'Tablet' }
   },
   {
     path:'accessories',
-    component: Section3Component
+    component: Section3Component,
+    data: { title: 'Accessories' }     
   },
   {
     path:'product/:any',
-    component:ProductPageComponent
+    component:ProductPageComponent,
+    data: { title: 'Product' }     
   },
   {
     path: 'about',
-    component: AboutComponent
+    component: AboutComponent,
+    data: { title: 'About' }     
   },
   {
     path: 'contacts',
-    component: ContactsComponent
+    component: ContactsComponent,
+    data: { title: 'Contacts' }     
   },
   {
     path: 'add',
-    component: ProductAddComponent
+    component: ProductAddComponent,
+    data: { title: 'Add Product' }     
   }
 ]
 
@@ -82,7 +90,7 @@ const appRoutes:Routes=[
     ContactsComponent,
     TrendComponent,
     AboutComponent,
-
+    
   ],
   imports: [
     RouterModule.forRoot(appRoutes), 
@@ -100,9 +108,9 @@ const appRoutes:Routes=[
     MatSelectModule,
     MatRadioModule,
     ImageUploadModule.forRoot(),
-
+    
   ],
-  providers: [],
+  providers: [Title],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
