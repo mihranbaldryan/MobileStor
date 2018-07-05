@@ -1,6 +1,7 @@
 import { Component, OnInit  } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import * as $ from 'jquery';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-product-page',
@@ -11,7 +12,7 @@ import * as $ from 'jquery';
 export class ProductPageComponent implements OnInit {
   card;
 
-  ['title']='card.model' 
+  newTitle = 'Yo'
 
   public constructor(private route: ActivatedRoute) {
     this.route.queryParams.subscribe(params => {

@@ -52,7 +52,7 @@ const appRoutes:Routes=[
   {
     path:'product/:any',
     component:ProductPageComponent,
-    data: { title: 'Product' }     
+  //  data: { title: 'Product' }     
   },
   {
     path: 'about',

@@ -1,6 +1,6 @@
 .main { 
-    margin-top:100px;
-    
+    margin-top:10vh;
+    min-height: 60vh;
     display: flex;
     justify-content: flex-start;
 }
