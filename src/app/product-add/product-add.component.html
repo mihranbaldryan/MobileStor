@@ -42,45 +42,45 @@
         <ng-template matStepLabel>Characteristics</ng-template>
         <div class="example-container">
             <mat-form-field class="example-full-width">
-              <input matInput  placeholder="Model" [(ngModel)]="model">
+              <input matInput  placeholder="Model" [(ngModel)]="model" [ngModelOptions]="{standalone: true}">
             </mat-form-field>
             <mat-form-field class="example-full-width">
-                <mat-select  placeholder="Announcement Year" [(ngModel)]="year">
+                <mat-select  placeholder="Announcement Year" [(ngModel)]="year" [ngModelOptions]="{standalone: true}">
                   <mat-option>None</mat-option>
                   <mat-option *ngFor="let year of years" [value]="year">{{year}}</mat-option>
                 </mat-select>
               </mat-form-field>
             <mat-form-field class="example-full-width">
-                <mat-select  placeholder="Operation System	" [(ngModel)]="os">
+                <mat-select  placeholder="Operation System	" [(ngModel)]="os" [ngModelOptions]="{standalone: true}">
                   <mat-option *ngFor="let os of opSystems"   [value]="os">{{os}}</mat-option>
                 </mat-select>              
             </mat-form-field>
             <mat-form-field class="example-full-width">
-              <input matInput placeholder="Screen Type">
+              <input matInput placeholder="Screen Type" 	 [(ngModel)]="screenType" [ngModelOptions]="{standalone: true}">
             </mat-form-field>
             <mat-form-field class="example-full-width">
-              <input matInput placeholder="Screen Resolution" >
+              <input matInput placeholder="Screen Resolution" [(ngModel)]="screenResolution" [ngModelOptions]="{standalone: true}" >
             </mat-form-field>
             <mat-form-field class="example-full-width">
-              <input matInput type="number" class="example-right-align" placeholder="Screen Size" >
+              <input matInput type="number" class="example-right-align" placeholder="Screen Size" [(ngModel)]=" screenSize" [ngModelOptions]="{standalone: true}"  >
               <span matSuffix>&nbsp; inch</span>
             </mat-form-field>
             <mat-form-field class="example-full-width">
-              <input type="number" class="example-right-align" matInput placeholder="Front Camera" >
+              <input type="number" class="example-right-align" matInput placeholder="Front Camera" [(ngModel)]="frontCamera" [ngModelOptions]="{standalone: true}">
               <span matSuffix>&nbsp; MP</span>
             </mat-form-field>
             <mat-form-field class="example-full-width">
-              <input type="number" class="example-right-align" matInput placeholder="Main Camera" >
+              <input type="number" class="example-right-align" matInput placeholder="Main Camera" [(ngModel)]=" mainCamera" [ngModelOptions]="{standalone: true}">
               <span matSuffix>&nbsp; MP</span>
             </mat-form-field>
             <mat-form-field class="example-full-width">
-              <input matInput type="number" class="example-right-align" placeholder="Number of processor cores	" >
+              <input matInput type="number" class="example-right-align" placeholder="Number of processor cores	"  [(ngModel)]=" numberOfProcessorCores" [ngModelOptions]="{standalone: true}" >
             </mat-form-field>
             <mat-form-field class="example-full-width">
-              <input matInput placeholder="CPU" >
+              <input matInput placeholder="CPU" [(ngModel)]="cpu" [ngModelOptions]="{standalone: true}" >
             </mat-form-field>
             <mat-form-field class="example-full-width">
-              <mat-select placeholder="RAM">
+              <mat-select placeholder="RAM" [(ngModel)]="ram" [ngModelOptions]="{standalone: true}" >
                 <mat-option>None</mat-option>
                 <mat-option *ngFor="let ram of rams" [value]="ram">{{ram}}</mat-option>
               </mat-select>
@@ -92,7 +92,7 @@
               <mat-radio-button value="no">No</mat-radio-button>
             </mat-radio-group>
             <mat-form-field class="example-full-width">
-                <mat-select placeholder="Memory">
+                <mat-select placeholder="Memory" [(ngModel)]=" memory" [ngModelOptions]="{standalone: true}" >
                     <mat-option>None</mat-option>
                     <mat-option *ngFor="let memory of memoryList" [value]="memory">{{memory}}</mat-option>
                   </mat-select>
