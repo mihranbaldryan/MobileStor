@@ -172,14 +172,14 @@
               <span matSuffix>&nbsp; mm</span>
             </mat-form-field>
             <mat-form-field class="example-full-width">
-                <mat-select placeholder="Audio" [formControl]="audio" multiple>
+                <mat-select placeholder="Audio" [formControl]="audioL" multiple>
                     <mat-select-trigger>
-                      {{audio.value ? audio.value[0] : ''}}
-                      <span *ngIf="audio.value?.length > 1" class="example-additional-selection">
-                        (+{{audio.value.length - 1}} others)
+                      {{audioL.value ? audioL.value[0] : ''}}
+                      <span *ngIf="audioL.value?.length > 1" class="example-additional-selection">
+                        (+{{audioL.value.length - 1}} others)
                       </span>
                     </mat-select-trigger>
-                    <mat-option *ngFor="let audio of audioList" [value]="audio">{{audio}}</mat-option>
+                    <mat-option *ngFor="let audioL of audioList" [value]="audioL">{{audioL}}</mat-option>
                   </mat-select>
             </mat-form-field>
             <mat-form-field class="example-full-width">
