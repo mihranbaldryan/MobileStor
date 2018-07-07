@@ -33,7 +33,7 @@
             
           </div>
         <div>
-          <button mat-button matStepperNext (click)="add()" >Next</button>
+          <button mat-button matStepperNext  >Next</button>
         </div>
       </form>
     </mat-step>
@@ -42,17 +42,17 @@
         <ng-template matStepLabel>Characteristics</ng-template>
         <div class="example-container">
             <mat-form-field class="example-full-width">
-              <input matInput placeholder="Model">
+              <input matInput  placeholder="Model" [(ngModel)]="model">
             </mat-form-field>
             <mat-form-field class="example-full-width">
-                <mat-select placeholder="Announcement Year">
+                <mat-select  placeholder="Announcement Year" [(ngModel)]="year">
                   <mat-option>None</mat-option>
                   <mat-option *ngFor="let year of years" [value]="year">{{year}}</mat-option>
                 </mat-select>
               </mat-form-field>
             <mat-form-field class="example-full-width">
-                <mat-select placeholder="Operation System	">
-                  <mat-option *ngFor="let os of opSystems" [value]="os">{{os}}</mat-option>
+                <mat-select  placeholder="Operation System	" [(ngModel)]="os">
+                  <mat-option *ngFor="let os of opSystems"   [value]="os">{{os}}</mat-option>
                 </mat-select>              
             </mat-form-field>
             <mat-form-field class="example-full-width">
@@ -192,7 +192,7 @@
           </div>
         <div>
           <button mat-button matStepperPrevious>Back</button>
-          <button mat-button matStepperNext>Next</button>
+          <button mat-button matStepperNext (click)="add()" >Next</button>
         </div>
       </form>
     </mat-step>

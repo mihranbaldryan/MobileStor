@@ -19,46 +19,79 @@ export class ProductAddComponent implements OnInit {
 
 
   img: '../../assets/images/mobile/s9.png';
-  company: '';
-  model: '';
-  price: '';
-  version: '';
-  year: '';
-  os: '';
-  screenType: '';
-  screenResolution: '';
-  screenSize: '';
-  frontCamera: '';
-  mainCamera: '';
-  numberOfProcessorCores: '';
-  cpu: '';
-  ram: '';
-  memoryCardSlot: '';
-  memory: '';
-  standartNetwork: '';
-  accessToTheInternet: '';
-  networkRangeLte4G: '';
-  gps: '';
-  bluetooth: '';
-  wifiNetwork: '';
-  network3G: '';
-  nfc: '';
-  networkLte4G: '';
-  charingConnectorType: '';
-  talkTime: '';
-  batteryType: '';
-  batteryCapacity: '';
-  weight: '';
-  thickness: '';
-  height: '';
-  width: '';
-  audio: '';
-  simCardQuantity: '';
+  company='';
+  model='';
+  price;
+  version= '';
+  year;
+  os='a';
+  screenType= '';
+  screenResolution= '';
+  screenSize= '';
+  frontCamera= '';
+  mainCamera='';
+  numberOfProcessorCores= '';
+  cpu= '';
+  ram= '';
+  memoryCardSlot= '';
+  memory= '';
+  standartNetwork= '';
+  accessToTheInternet= '';
+  networkRangeLte4G= '';
+  gps= '';
+  bluetooth='';
+  wifiNetwork='';
+  network3G= '';
+  nfc= '';
+  networkLte4G= '';
+  charingConnectorType= '';
+  talkTime= '';
+  batteryType= '';
+  batteryCapacity= '';
+  weight= '';
+  thickness= '';
+  height= '';
+  width= '';
+  audio= '';
+  simCardQuantity= '';
 
   addCard={
-    price: this.price,
-    company: this.company,
-    model: this.model,
+    img:'../../assets/images/mobile/s9.png',
+       company: this.company,
+       model: this.model,
+       price: this.price,
+       version: this.version,
+       year: this.year,
+       os: this.os,
+       screenType: this.screenType,
+       screenResolution: this.screenResolution,
+       screenSize: this.screenSize,
+       frontCamera: this.frontCamera,
+       mainCamera: this.mainCamera,
+       numberOfProcessorCores: this.numberOfProcessorCores,
+       cpu: this.cpu,
+       ram: this.ram,
+       memoryCardSlot: this.memoryCardSlot,
+       memory: this.memory,
+       standartNetwork: this.standartNetwork,
+       accessToTheInternet: this.accessToTheInternet,
+       networkRangeLte4G: this.networkRangeLte4G,
+       gps: this.gps,
+       bluetooth: this.bluetooth,
+       wifiNetwork: this.wifiNetwork,
+       network3G: this.network3G,
+       nfc: this.nfc,
+       networkLte4G: this.networkLte4G,
+       charingConnectorType: this.charingConnectorType,
+       talkTime: this.talkTime,
+       batteryType: this.batteryType,
+       batteryCapacity: this.batteryCapacity,
+       weight: this.weight,
+       thickness: this.thickness,
+       height: this.height,
+       width: this.width,
+       audio: this.audio,
+       simCardQuantity: this.simCardQuantity,
     
   };
 
@@ -123,7 +156,7 @@ export class ProductAddComponent implements OnInit {
       
     this.productsService.product[0].push( {
 
-       img: '../../assets/images/mobile/s9.png',
+       img:'../../assets/images/mobile/s9.png',
        company: this.company,
        model: this.model,
        price: this.price,
