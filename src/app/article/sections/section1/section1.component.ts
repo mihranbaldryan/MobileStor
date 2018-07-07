@@ -1,16 +1,19 @@
 import { Component, OnInit, Input, Output , EventEmitter} from '@angular/core';
-import { ProductCardComponent } from '../../../product-card/product-card.component';
-
+import { ProductAddComponent } from '../../../product-add/product-add.component';
+import { CardService } from '../../../card.service';
 @Component({
   selector: 'app-section1',
   templateUrl: './section1.component.html',
   styleUrls: ['./section1.component.css']
 })
-export class Section1Component extends ProductCardComponent implements OnInit {
+export class Section1Component  implements OnInit {
+product:any;
+  constructor(private Cardservice:CardService){
 
-  // constructor() { }
+  }
 
   ngOnInit() {
+    this.product=this.Cardservice.product;
   }
 
 }

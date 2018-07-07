@@ -30,7 +30,7 @@
   <app-product-card *ngFor="let cards of product[1]" [card]='cards'></app-product-card>
   <app-product-card *ngFor="let cards of product[2]" [card]='cards'></app-product-card>
 
-<h1 style="text-align: center;padding: 40px;width: 100%;">Most Popular <br>
+<h1 style="text-align: center;padding: 40px;width: 100%;">Most Popular {{product1}}<br>
 <hr style="width: 30%;text-align: center"></h1>
 <app-product-card *ngFor="let cards of product[2]" [card]='cards'></app-product-card>
 </div>

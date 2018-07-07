@@ -8,31 +8,32 @@
         <div class="example-container">
             <mat-radio-group> 
                 <span matPrefix>Type of Product &nbsp;</span>                  
-              <mat-radio-button value="0" checked=true>Mobile</mat-radio-button>
+              <mat-radio-button value="0" checked=true  >Mobile</mat-radio-button>
               <mat-radio-button value="1">Tablet</mat-radio-button>
               <mat-radio-button value="2">Accessories</mat-radio-button>
             </mat-radio-group>
 
-            <image-upload></image-upload>   
+            <image-upload></image-upload>
+         
            
               <mat-form-field class="example-full-width"> 
-              <mat-select placeholder="Company" formControlName="firstCtrl1" required>
+              <mat-select placeholder="Company"   [(ngModel)]="company" formControlName="firstCtrl1" required>
                 <mat-option></mat-option>
-                <mat-option *ngFor="let company of companyList" [value]="company">{{company}}</mat-option>
+                <mat-option *ngFor="let company of companyList"  [value]="company">{{company}}</mat-option>
               </mat-select>              
               </mat-form-field>
               <mat-form-field class="example-full-width">
-                <input matInput placeholder="Model" formControlName="firstCtrl2" required>
+                <input matInput placeholder="Model"   [(ngModel)]="model" formControlName="firstCtrl2" required>
               </mat-form-field>
               <mat-form-field>
-                <input matInput placeholder="Price" type="number" class="example-right-align" formControlName="firstCtrl3" required>
+                <input matInput placeholder="Price"    type="number"  [(ngModel)]="price" class="example-right-align" formControlName="firstCtrl3" required>
                 <span matPrefix>$&nbsp;</span>
                 <span matSuffix>.00</span>
               </mat-form-field>
             
           </div>
         <div>
-          <button mat-button matStepperNext>Next</button>
+          <button mat-button matStepperNext (click)="add()" >Next</button>
         </div>
       </form>
     </mat-step>
