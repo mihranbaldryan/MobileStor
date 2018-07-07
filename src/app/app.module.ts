@@ -21,9 +21,8 @@ import { TrendComponent } from './trend/trend.component';
 import { AboutComponent } from './about/about.component';
 import { MatStepperModule, MatIconModule, MatButtonModule, MatFormFieldModule, MatInputModule, MatOptionModule, MatSelectModule, MatRadioButton, MatRadioModule } from '@angular/material';
 import { ImageUploadModule } from "angular2-image-upload";
-import { CardService } from './card.service';
-
-
+import { ProductsService } from '../products.service'
+ 
 
 const appRoutes:Routes=[
 
@@ -113,7 +112,10 @@ const appRoutes:Routes=[
     ImageUploadModule.forRoot(),
     
   ],
-  providers: [Title,CardService],
+  providers: [
+    Title,
+    ProductsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

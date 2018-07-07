@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ProductAddComponent } from '../../product-add/product-add.component';
 import { OVERLAY_KEYBOARD_DISPATCHER_PROVIDER } from '@angular/cdk/overlay/typings/keyboard/overlay-keyboard-dispatcher';
-import { CardService } from '../../card.service';
+import { ProductsService } from '../../../products.service';
 @Component({
   selector: 'app-sections',
   templateUrl: './sections.component.html',
@@ -10,13 +10,13 @@ import { CardService } from '../../card.service';
 })
 export class SectionsComponent  implements OnInit {
   product:any;
-  constructor(private Cardservice:CardService){
+  constructor(private productsService:ProductsService){
 
   }
 
   ngOnInit() {
     // this.doSomething(event,name);
-    this.product=this.Cardservice.product;
+    this.product=this.productsService.product;
    console.log(this.product[0]);
   }
 

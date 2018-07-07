@@ -2,7 +2,7 @@ import { Component, OnInit,  } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, } from '@angular/forms';
 import { FormControl } from '@angular/forms';
 import * as $ from 'jquery'
-import { CardService } from '../card.service';
+import { ProductsService } from '../../products.service';
 @Component({
   selector: 'app-product-add',
   templateUrl: './product-add.component.html',
@@ -30,7 +30,7 @@ export class ProductAddComponent implements OnInit {
   };
 
 
-  constructor(private _formBuilder: FormBuilder,private Cardservice:CardService) {}
+  constructor(private _formBuilder: FormBuilder,private productsService:ProductsService) {}
   
   years:number[] = [];
   opSystems:string[] = [];
@@ -86,9 +86,10 @@ export class ProductAddComponent implements OnInit {
 
 
   add(){
+ 
 
+    this.productsService.product[0].push( {
 
-    this.Cardservice.product[0].push( {
       img: '../../assets/images/mobile/s9.png',
       company:  this.company,
       model:  this.model,
@@ -126,7 +127,7 @@ export class ProductAddComponent implements OnInit {
       audio: 'MP3, M4A, 3GA, AAC, OGG, OGA, WAV, WMA, AMR, AWB, FLAC, MID, MIDI, XMF, MXMF, IMY, RTTTL, RTX, OTA, DFF, DSF, APE',
       simCardQuantity: '2 SIM',
     })
-    console.log(this.Cardservice.product[0]);
+    console.log(this.productsService.product[0]);
     
 
     }

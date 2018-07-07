@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, Output , EventEmitter} from '@angular/core';
 import { ProductAddComponent } from '../../../product-add/product-add.component';
-import { CardService } from '../../../card.service';
+import { ProductsService } from '../../../../products.service';
+
 @Component({
   selector: 'app-section1',
   templateUrl: './section1.component.html',
@@ -8,12 +9,12 @@ import { CardService } from '../../../card.service';
 })
 export class Section1Component  implements OnInit {
 product:any;
-  constructor(private Cardservice:CardService){
+  constructor(private productsService:ProductsService){
 
   }
 
   ngOnInit() {
-    this.product=this.Cardservice.product;
+    this.product=this.productsService.product;
   }
 
 }
