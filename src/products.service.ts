@@ -7,12 +7,16 @@ import { Observable, of } from 'rxjs';
 export class ProductsService {
 
   constructor() { }
-
+  shoppingCart:object[]=[];
+  compare:object[]=[];
+  like:object[]=[];
 
 
   mobile:object[] = [
 
-    {
+    { shopping_cart:true,
+      compare:true,
+      like: true,
       img: '../../assets/images/mobile/s9.png',
       company: 'Samsung',
       model: 'Galaxy S9',
@@ -51,7 +55,9 @@ export class ProductsService {
       simCardQuantity: '2 SIM',
     },
     
-    {
+    { shopping_cart:true,
+      compare:true,
+      like: true,
       img: '../../assets/images/mobile/iphonex.jpg',
       company: 'Apple',
       model: 'Iphone X 256GB',
@@ -91,6 +97,9 @@ export class ProductsService {
     },
     
     {
+      shopping_cart:true,
+      compare:true,
+       like: true,
       img: '../../assets/images/mobile/nokia8.jpg',
       company: 'Nokia',
       model: '8 Sirocco',
@@ -130,6 +139,9 @@ export class ProductsService {
     },
     
     {
+      shopping_cart:true,
+      compare:true,
+       like: true,
       img: '../../assets/images/mobile/sonyxz.jpeg',
       company: 'Sony',
       model: 'Xperia XZ dual',
@@ -169,6 +181,9 @@ export class ProductsService {
     },
     
     {
+      shopping_cart:true,
+      compare:true,
+       like: true,
       img: '../../assets/images/mobile/htcu11.jpg',
       company: 'HTC',
       model: 'U 11',
@@ -211,7 +226,9 @@ export class ProductsService {
   
 tablet = [
 
-{
+{ shopping_cart:true,
+      compare:true,
+   like: true,
   img:["../../assets/images/tablet/AppleiPadPro.jpg"],
   company :'Apple',
   model:' iPad Pro 10.5 ',
@@ -252,7 +269,9 @@ tablet = [
 
 
 
-{
+{ shopping_cart:true,
+      compare:true,
+   like: true,
   img:["../../assets/images/tablet/SamsungGalaxyTabS2.jpg"],
   company :'Samsung',
   model:'Galaxy Tab S2 8.0 T719 ',
@@ -292,7 +311,9 @@ tablet = [
 },
 
 
-{
+{ shopping_cart:true,
+      compare:true,
+   like: true,
   img:["../../assets/images/tablet/LenovoTab7.jpg"],
   company :'Lenovo',
   model:' Tab 7 (TB-7504X) ',
@@ -334,7 +355,9 @@ tablet = [
 
 
 
-{
+{ shopping_cart:true,
+      compare:true,
+   like: true,
   img:["../../assets/images/tablet/AppleiPadPro12.9.jpg"],
   company :'Apple',
   model:' iPad Pro 12.9  ',
@@ -373,7 +396,9 @@ tablet = [
   simCardQuantity: '',
 },
 
-{
+{ shopping_cart:true,
+      compare:true,
+   like: true,
   img:["../../assets/images/tablet/SamsungGalaxyTabS3.jpg"],
   company :'Samsung',
   model:'Galaxy Tab S3 9.7 T825 ',
@@ -418,6 +443,9 @@ tablet = [
   accessories = [
 
     {
+      shopping_cart:true,
+      compare:true,
+       like: true,
       img: '../../assets/images/accessories/appleairpod.jpeg',
       company: 'Apple',
       model: 'EarPods lightning',
@@ -425,6 +453,9 @@ tablet = [
     },
     
     {
+      shopping_cart:true,
+      compare:true,
+       like: true,
       img: '../../assets/images/accessories/bearts.png',
       company: 'Beats',
       model: 'EP On-Ear',
@@ -432,6 +463,9 @@ tablet = [
     },
 
     {
+      shopping_cart:true,
+      compare:true,
+       like: true,
       img: '../../assets/images/accessories/applekoch.jpg',
       company: 'Apple',
       model: 'USB power adapter 5W',
@@ -439,6 +473,9 @@ tablet = [
     },
 
     {
+      shopping_cart:true,
+      compare:true,
+       like: true,
       img: '../../assets/images/accessories/cabelusb.jpg',
       company: 'Havit',
       model: 'HV-CB534 Micro USB',
@@ -446,6 +483,9 @@ tablet = [
     },
 
     {
+      shopping_cart:true,
+      compare:true,
+       like: true,
       img: '../../assets/images/accessories/pill.jpg',
       company: 'Beeats',
       model: 'Loudspeaker Beats Pill+',
