@@ -34,8 +34,8 @@ export const start=trigger('start', [
 
 
   export const start3= trigger('start3', [
-    state('go1', style({transform: 'translateY(0)'})),
-    state('togo1',   style({transform: 'translateY(-20%)'})),
+    state('go1', style({transform: 'translateY(-120%)'})),
+    state('togo1',   style({transform: 'translateY(0)'})),
     transition('go1 <=> togo1', animate('700ms ease-in')),
     
     

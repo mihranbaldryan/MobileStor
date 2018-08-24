@@ -23,10 +23,11 @@ export class NavComponent implements OnInit {
 state:string='go';
 state1:string="go1";
 imgSrc="../../../assets/images/menu.png";
-
+search;
 div1;
 close;
 flag:boolean=true;
+flag2:boolean=true;
   ngOnInit() {
 
 
@@ -49,15 +50,35 @@ $(document).ready(function(){
 
 
 
-
+this.search=document.getElementById("site_search");
 this.div1=document.getElementById("sabmenuP");
 this.close=document.getElementById("close");
   }
 
+  startSearch(){
+    if(this.flag2)
+     {
+       //  this.state='togo';
+    this.state1="togo1";
+    this.search.style.display="block";
+    }
+    else
+    {   
+      // this.state='go';
+    this.state1='go1';
+    setTimeout(()=>{
+      if(this.flag)
+      this.search.style.display="none"; }, 
+    1000
+      )}
+    this.flag2=!this.flag2;
+  }
+
+
   startAnime(){
     if(this.flag){
     this.state='togo';
-    this.state1="togo1";
+    
  this.imgSrc="../../../assets/images/cancel-music.png";
   this.div1.style.display="block";
   this.close.style.display="block";
@@ -66,7 +87,7 @@ this.close=document.getElementById("close");
 else{
   this.imgSrc="../../../assets/images/menu.png";
   this.state='go';
-  this.state1='go1';
+ 
   
  this.close.style.display="none";
  this.none();

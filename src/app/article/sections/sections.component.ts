@@ -17,7 +17,7 @@ export class SectionsComponent  implements OnInit {
   ngOnInit() {
     // this.doSomething(event,name);
     this.product=this.productsService.product;
-   console.log(this.product[0]);
+  
   }
 
 }

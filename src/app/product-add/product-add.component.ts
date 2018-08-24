@@ -13,7 +13,7 @@ export class ProductAddComponent implements OnInit {
   secondFormGroup: FormGroup;
   isEditable = false;
   isOptional = false;
-
+   i:any=0;
 
 
 
@@ -24,7 +24,7 @@ export class ProductAddComponent implements OnInit {
   price;
   version= '';
   year;
-  os='a';
+  os='';
   screenType= '';
   screenResolution= '';
   screenSize= '';
@@ -56,6 +56,9 @@ export class ProductAddComponent implements OnInit {
   simCardQuantity= '';
 
   addCard={
+    shopping_cart:true,
+    compare:true,
+    like: true,
     img:'../../assets/images/mobile/s9.png',
        company: this.company,
        model: this.model,
@@ -154,7 +157,7 @@ export class ProductAddComponent implements OnInit {
   add(){
  
       
-    this.productsService.product[0].push( {
+    this.productsService.product[this.i].push( {
 
        img:'../../assets/images/mobile/s9.png',
        company: this.company,
@@ -193,7 +196,7 @@ export class ProductAddComponent implements OnInit {
        audio: this.audio,
        simCardQuantity: this.simCardQuantity,
     })
-     console.log(this.productsService.product[0]);
+    
     
 
     }

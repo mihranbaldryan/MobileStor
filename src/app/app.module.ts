@@ -21,7 +21,10 @@ import { TrendComponent } from './trend/trend.component';
 import { AboutComponent } from './about/about.component';
 import { MatStepperModule, MatIconModule, MatButtonModule, MatFormFieldModule, MatInputModule, MatOptionModule, MatSelectModule, MatRadioButton, MatRadioModule } from '@angular/material';
 import { ImageUploadModule } from "angular2-image-upload";
-import { ProductsService } from '../products.service'
+import { ProductsService } from '../products.service';
+import { LikeComponent } from './like/like.component';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { CompareComponent } from './compare/compare.component'
  
 
 const appRoutes:Routes=[
@@ -31,11 +34,22 @@ const appRoutes:Routes=[
     component: ArticleComponent,
     data: { title: 'Home' } 
   },
-  // {
-  //   path: 'trend',
-  //   component: TrendComponent,
-  //   data: { title: '' } 
-  // },
+  {
+    path: 'shoppingCart',
+    component: ShoppingCartComponent,
+    data: { title: ' ShoppingCart' } 
+  },
+  {
+    path: 'compare',
+    component:  CompareComponent,
+    data: { title: 'Compare' } 
+  },
+ 
+  {
+    path: 'like',
+    component: LikeComponent,
+    data: { title: 'Like' } 
+  },
   {
     path:'mobile',
     component: Section1Component,
@@ -92,6 +106,9 @@ const appRoutes:Routes=[
     ContactsComponent,
     TrendComponent,
     AboutComponent,
+    LikeComponent,
+    ShoppingCartComponent,
+    CompareComponent,
     
   ],
   imports: [

@@ -14,9 +14,9 @@
                     <div class="product-options">
                     <div class="clear"></div>
                       <div class="productInfo">
-                        <a href="#"><img class="info" src="../../assets/images/shopping-cart.png" alt=""></a>
-                        <a href="#"><img class="info" src="../../assets/images/compare.png" alt=""></a>
-                        <a href="#"><img class="info" src="../../assets/images/like.png" alt=""></a>
+                        <a [ngStyle]="{'background':shopping_cartColor}" (click)="shopping_cart()" ><img class="info"  src="../../assets/images/shopping-cart.png" alt=""></a>
+                        <a [ngStyle]="{'background':compareColor}"  (click)="compare()" ><img class="info"  src="../../assets/images/compare.png" alt=""></a>
+                        <a  [ngStyle]="{'background':likeColor}"  (click)="like()" ><img class="info"  src="../../assets/images/like.png" alt=""></a>
                         <!-- <a href="#"><img class="info" src="../../assets/images/more.png" alt=""></a> -->
                       </div>
                 </div>                       
