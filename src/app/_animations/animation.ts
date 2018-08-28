@@ -3,8 +3,16 @@ import { trigger, state , animate, transition, style } from '@angular/animations
 
 export const start=trigger('start', [
     state('in', style({transform: 'translateX()'})),
-    transition('void => *', [
+    transition('void <=> *', [
       style({transform: 'translateY(-100%)'}),
+      animate(500)
+    ])
+    
+  ])
+  export const startCard=trigger('startCard', [
+    state('in', style({transform: 'translateX()'})),
+    transition('void <=> *', [
+      style({transform: 'translateY(-10%)'}),
       animate(500)
     ])
     

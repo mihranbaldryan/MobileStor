@@ -140,7 +140,7 @@ a{
 
 #sp{ display:inline-block;
     width:73px;
-    height:7vh;
+  height:60.5px;
     background:url(../../../assets/images/sp.svg);
 }
 
@@ -151,7 +151,7 @@ a{
 #sp1{ 
     display:inline-block;
     width:73px;
-    height:7vh;
+  height:60.5px;
     background-image:url(../../../assets/images/sp.svg);
     background-position:-60.88px 0px ;
 }

@@ -4,6 +4,9 @@
     padding: 0px;
 }
 
+img{
+    cursor:pointer;
+}
 .content {
     margin-top: 15vh;
     display: flex;

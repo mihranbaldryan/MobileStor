@@ -5,6 +5,10 @@ import { Observable, of } from 'rxjs';
   providedIn: 'root'
 })
 export class ProductsService {
+numberShopping:number=0;
+priceShopping:number=0;
+numberLike:number=0;
+priceLike:number=0;
 
   constructor() { }
   shoppingCart:object[]=[];

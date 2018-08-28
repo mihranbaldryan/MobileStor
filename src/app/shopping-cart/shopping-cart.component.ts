@@ -7,12 +7,14 @@ import { ProductsService } from '../../products.service';
 })
 export class ShoppingCartComponent implements OnInit {
   product:any;
+ 
   constructor(private productsService:ProductsService){
 
   }
 
   ngOnInit() {
     this.product=this.productsService.shoppingCart;
+  
   }
 
 }

@@ -6,14 +6,16 @@ import { ProductsService } from '../../products.service';
   styleUrls: ['./compare.component.css']
 })
 export class CompareComponent implements OnInit {
-
+// card:any;
   product:any;
+  
   constructor(private productsService:ProductsService){
 
   }
 
   ngOnInit() {
     this.product=this.productsService.compare;
+   
   }
 
 }

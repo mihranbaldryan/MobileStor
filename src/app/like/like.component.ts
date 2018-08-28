@@ -17,4 +17,20 @@ export class LikeComponent implements OnInit {
   }
 
 
+  addShoping(){
+
+for(let card of this.product){
+
+if(this.productsService.shoppingCart.indexOf(card)==-1){
+  card.shopping_cart=!card.shopping_cart;
+  this.productsService.numberShopping++;
+  this.productsService.priceShopping+=parseInt(card.price.slice(2));
+  this.productsService.shoppingCart.push(card);
+
+}
+
+  }
+
+
+}
 }

@@ -4,6 +4,30 @@
     display: flex;
     justify-content: flex-start;
 }
+.info{
+    margin-top:10vh;
+    margin-left: 1vw;
+}
+.info button{
+    width: 500px;
+    font-size: 15px;
+    background: #475498;
+    color:white;
+    padding:5px;
+    border-radius: 5%;
+    cursor: pointer;
+   
+}
+.info button:hover{
+    background:#011992 ;
+    
+}
+
+.info h1{ 
+    
+    font-size: 20px;
+    color:#475498;
+}
 
 .content {
     margin-top: 2vh;
@@ -21,4 +45,10 @@
     .content {
         width: 90%;
     }
+    .info button{
+        width: 98vw;
+    }
+        .info{
+            width: 98vw;
+        }
 }

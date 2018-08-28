@@ -1,6 +1,6 @@
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
 
-<div class="content">
+<div class="content" [@startCard]>
 <div id="make-3D-space">
     <div id="product-card">
             <img style="width: 230px;min-height: 300px;max-height: 400px;" src='{{ card.img }}' alt="" />
@@ -17,7 +17,7 @@
                         <a [ngStyle]="{'background':shopping_cartColor}" (click)="shopping_cart()" ><img class="info"  src="../../assets/images/shopping-cart.png" alt=""></a>
                         <a [ngStyle]="{'background':compareColor}"  (click)="compare()" ><img class="info"  src="../../assets/images/compare.png" alt=""></a>
                         <a  [ngStyle]="{'background':likeColor}"  (click)="like()" ><img class="info"  src="../../assets/images/like.png" alt=""></a>
-                        <!-- <a href="#"><img class="info" src="../../assets/images/more.png" alt=""></a> -->
+                       
                       </div>
                 </div>                       
             </div>
